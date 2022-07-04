@@ -28,15 +28,15 @@ const { Step } = Steps;
 const Home: NextPage = () => {
   const { data: session, status } = useSession();
 
-  // if (status === "loading") {
-  //   return (
-  //     <>
-  //       <HeaderMain></HeaderMain>
-  //       <Skeleton active size='large' paragraph={{ rows: 50 }} />
-  //     </>
+  if (status === "loading") {
+    return (
+      <>
+        <HeaderMain></HeaderMain>
+        <Skeleton active size='large' paragraph={{ rows: 50 }} />
+      </>
 
-  //   )
-  // }
+    )
+  }
 
   return (
     <>

@@ -1,26 +1,26 @@
-import {RadiusUprightOutlined} from '@ant-design/icons'
-import type {GetServerSidePropsContext, NextPage} from 'next'
-import {Layout, Avatar, Typography, Button, PageHeader, Divider, Row, Col, Skeleton, Image, Space, Card} from 'antd';
+import { RadiusUprightOutlined } from '@ant-design/icons'
+import type { GetServerSidePropsContext, NextPage } from 'next'
+import { Layout, Avatar, Typography, Button, PageHeader, Divider, Row, Col, Skeleton, Image, Space, Card } from 'antd';
 import SkeletonAvatar from 'antd/lib/skeleton/Avatar';
 import { useState } from 'react';
 import { useEffect } from 'react';
-import HeaderMain from '../components/HeaderMain';
-import {signOut, useSession} from 'next-auth/react';
-import {Tabs} from 'antd';
+import HeaderMain from './HeaderMain';
+import { signOut, useSession } from 'next-auth/react';
+import { Tabs } from 'antd';
 import { GetStaticProps, GetStaticPaths, GetServerSideProps } from 'next'
 // building honestly the menu for a logged in user
 
-const {Header, Content, Footer, Sider} = Layout
-const {Text, Title} = Typography
+const { Header, Content, Footer, Sider } = Layout
+const { Text, Title } = Typography
 
 // handle the change of the tab pane
 const { TabPane } = Tabs;
 
-interface profolioPropsInterface{
+interface profolioPropsInterface {
     data: {}
 }
 
-const  Profolio:NextPage<profolioPropsInterface> = (props) => {
+const Profolio: NextPage<profolioPropsInterface> = (props) => {
     let SITE_USER_DATA = props.data
     return (
         <>
@@ -40,11 +40,11 @@ const  Profolio:NextPage<profolioPropsInterface> = (props) => {
                 ]}
             ></PageHeader>
 
-            <Layout style={{height:"100vh"}}>
-                <Row style={{padding:50}} >
+            <Layout style={{ height: "100vh" }}>
+                <Row style={{ padding: 50 }} >
                     <Col align={"middle"} span={24}>
                         <>
-                            <Button type="primary" shape="round" size="large" style={{height:"75px", width:"250px", fontSize:"35px"}} > Add Pro-folio </Button>
+                            <Button type="primary" shape="round" size="large" style={{ height: "75px", width: "250px", fontSize: "35px" }} > Add Pro-folio </Button>
 
                         </>
                     </Col>

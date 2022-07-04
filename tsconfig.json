@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/initial-elements.js", "pages/diagram.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/initial-elements.jss.jssrc/pages/diagram.jsagram.js"],
   "exclude": ["node_modules"]
 }
