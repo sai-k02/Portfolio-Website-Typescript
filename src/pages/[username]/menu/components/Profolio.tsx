@@ -4,7 +4,7 @@ import { Layout, Avatar, Typography, Button, PageHeader, Divider, Row, Col, Skel
 import SkeletonAvatar from 'antd/lib/skeleton/Avatar';
 import { useState } from 'react';
 import { useEffect } from 'react';
-import HeaderMain from './HeaderMain';
+import HeaderMain from '../../../components/HeaderMain';
 import { signOut, useSession } from 'next-auth/react';
 import { Tabs } from 'antd';
 import { GetStaticProps, GetStaticPaths, GetServerSideProps } from 'next'
@@ -16,11 +16,11 @@ const { Text, Title } = Typography
 // handle the change of the tab pane
 const { TabPane } = Tabs;
 
-interface profolioPropsInterface {
+interface ProfolioProps {
     data: {}
 }
 
-const Profolio: NextPage<profolioPropsInterface> = (props) => {
+const Profolio: NextPage<ProfolioProps> = (props: ProfolioProps) => {
     let SITE_USER_DATA = props.data
     return (
         <>

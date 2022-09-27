@@ -60,7 +60,7 @@ const HeaderMain: NextPage = () => {
 
           </Input>,
           <Tooltip title={"Sign out"} placement={"bottom"}>
-            <Button key={"sign-out"} style={{ minWidth: 15, minHeight: 15, fontWeight: "bold" }} type="primary" shape="round" size="large" onClick={() => signOut()}>Sign Out</Button>
+            <Button key={"sign-out"} style={{ minWidth: 15, minHeight: 15, fontWeight: "bold" }} type="primary" shape="round" size="large" onClick={() => signOut({ callbackUrl: "/" })}>Sign Out</Button>
           </Tooltip>,
           <Tooltip title="Menu" placement={"bottom-start"}>
             <a onClick={() => { location.assign("/" + SESSION_USERNAME + "/menu") }}>

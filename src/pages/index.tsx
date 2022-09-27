@@ -125,7 +125,7 @@ const Home: NextPage = () => {
                   <Row> <Text strong type="secondary" style={{ fontSize: "35px" }}> "I needed a way to keep track and interjoin everything from job experiences, projects, certs, technologies used."</Text> </Row>
                   <Row>
                     <Col push={14}>
-                      <Text strong type="secondary" style={{ fontSize: "35px" }}>  - Sai (Creator of Profolio) </Text>
+                      <Text strong type="secondary" style={{ fontSize: "35px" }}>  - Sai (Creator of pro-folio) </Text>
                     </Col>
 
                   </Row>

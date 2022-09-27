@@ -10,7 +10,7 @@ import { GetServerSideProps } from 'next'
 // import components
 import Experiences from './components/Experiences';
 import Profile from './components/Profile';
-import Profolio from './components/Profolio';
+import pro-folio from './components/pro-folio';
 import Projects from './components/Projects';
 import Settings from './components/Settings';
 import Technologies from './components/Technologies';
